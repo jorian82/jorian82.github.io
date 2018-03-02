@@ -3,9 +3,10 @@
 
 <head>
     <title>SSDE</title>
-    <link rel="shortcut icon" href="static/images/SSDE.ico" >
+    {% load staticfiles %}
+    <link rel="shortcut icon" href="{% static 'images/SSDE.ico' %}" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/style.css" >
+    <link rel="stylesheet" href="{% static 'webapp/css/style.css' %}" >
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Hind+Siliguri|Julius+Sans+One|Jura|Montserrat|Quicksand|Text+Me+One">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <meta charset="utf-8" />
@@ -15,7 +16,7 @@
 <body class="body font-square">
     <div class="header" >
         <div class="left">
-            <img src="static/images/SSDE_Logo.png" width="150px">
+            <img src="{% static 'images/SSDE_Logo.png' %}" width="150px">
         </div>
         <div class="right;">
             <ul class="nav justify-content-end">
@@ -23,31 +24,17 @@
                   <a class="nav-link active" href="/"><i class="fas fa-home"></i>&nbsp;|&nbsp;Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i></i>&nbsp;|&nbsp;Contacto</a>
+                  <a class="nav-link" href="/contact"><i class="fas fa-envelope"></i></i>&nbsp;|&nbsp;Contacto</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html"><i class="fas fa-user"></i>&nbsp;|&nbsp;Qui&eacute;n soy?</a>
+                  <a class="nav-link" href="/about"><i class="fas fa-user"></i>&nbsp;|&nbsp;Qui&eacute;n soy?</a>
                 </li>
               </ul>
         </div>
     </div>
     <div class="content font-green">
-        <div class="container-fluid center title">
-            <h1 class="display-3 font-capitals2 center">Smart Software Development for Enterprises</h1>
-        </div>
-        <div class="container-fluid title">
-            <h3 class="display-6 center">Quieres crear una p&aacute;gina web para tu negocio y no sabes como?</h3>
-            <hr class="my-4">
-        </div>
-        <div class="container-fluid title">
-            <h3 class="display-6 center">Te gustar&iacute;a automatizar la gesti&oacute;n tu negocio pero ningun programa que hay se ajusta a tus necesidades?</h3>
-            <hr class="my-4">
-        </div>
-        <br><br><br>
-        <div class="container-fluid">
-            Te invito a que me conozcas, tengo una amplia variedad de soluciones, podemos integrar la facturaci&oacute;n electr&oacute;nica a las aplicaciones de se desarrollen
-        </div>
-        <br><br><br>
+    {% block content %}
+    {% endblock %}	
     </div>
     <div class="footer">
         <div class="left">
