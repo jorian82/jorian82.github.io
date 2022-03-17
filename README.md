@@ -10,10 +10,13 @@ It is a simple SPA developed with angular 13 using bootstrap 5 and fontawesome 5
 
 ## Enhancements
 Next possible steps are: <br>
-1. Add contact form to send emails to my business account to follow up on possible customers
-2. Add blog page to provide information on different topics and allow comments
-3. Add Q&A section to have interactions with visitors
-4. Add blog entries subscriptions
-5. Add blog entries rating
-6. Add site subscriptions
-7. TBD
+<ol>
+  <li> Add contact form to send emails to my business account to follow up on possible customers </li>
+  <li> Host page in a prod server (Heroku, AWS) to use DB interactions </li>
+  <li> Add blog page to provide information on different topics and allow comments <li>
+  <li> Add Q&A section to have interactions with visitors </li>
+  <li> Add blog entries subscriptions </li>
+  <li> Add blog entries rating </li>
+  <li> Add site subscriptions </li>
+  <li> TBD </li>
+</ol>
